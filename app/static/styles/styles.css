@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #343a40;
+    border-bottom: 2px solid #212529;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    background: linear-gradient(to right, #212529, #343a40);
+    color: #ffffff;
+    padding: 150px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* About Me Section Styles */
+.about {
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+
+.about h2 {
+    color: #343a40;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 1.4rem;
+    color: #6c757d;
+    line-height: 1.8;
+}
+
+.about pre {
+    font-size: 1.4rem;
+    color: #6c757d;
+    line-height: 1.8;
+}
+/* Contact Section Styles */
+.contact {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+}
+
+.contact h2 {
+    color: #343a40;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card {
+    border: none;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.card-text {
+    font-size: 1.4rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* Services and Skills Section Styles */
+.services {
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+
+.services h2 {
+    color: #343a40;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+/* Projects Section Styles */
+.projects {
+    padding: 100px 0;
+}
+
+.projects h2 {
+    color: #343a40;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+.modal-content {
+    border: none;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    color: #343a40;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.modal-body p {
+    font-size: 1.4rem;
+    color: #6c757d;
+    line-height: 1.8;
+}
+
+/* Add Responsive Styling */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0;
+    }
+
+    .about,
+    .contact,
+    .services,
+    .projects {
+        padding: 80px 0;
+    }
+}
+
+
+.btn-primary {
+    background-color: #343a40;
+    border: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #212529;
+}
+
+.card-header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+}
+
+.card-header img {
+    width: 50px; /* Настройте ширину изображения по вашему усмотрению */
+    margin-right: 10px; /* Добавьте немного отступа между изображением и текстом заголовка */
+}
