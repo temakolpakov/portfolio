@@ -44,7 +44,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -67,6 +67,18 @@ body {
 }
 
 .about p {
+    font-size: 1.4rem;
+    color: #6c757d;
+    line-height: 1.8;
+}
+
+.about ul {
+    font-size: 1.4rem;
+    color: #6c757d;
+    line-height: 1.8;
+}
+
+.about ul li {
     font-size: 1.4rem;
     color: #6c757d;
     line-height: 1.8;
@@ -114,7 +126,7 @@ body {
 
 /* Services and Skills Section Styles */
 .services {
-    background-color: #ffffff;
+    background-color: #f8f9fa;
     padding: 100px 0;
 }
 
@@ -192,4 +204,19 @@ body {
 .card-header img {
     width: 50px; /* Настройте ширину изображения по вашему усмотрению */
     margin-right: 10px; /* Добавьте немного отступа между изображением и текстом заголовка */
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    color: #6c757d;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.modal-body li p {
+    font-size: 1.4rem;
+    color: #6c757d;
+    line-height: 1.8;
 }
