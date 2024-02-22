@@ -9,6 +9,33 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../static/styles/styles.css"> <!-- Linking the generated styles.css file -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(96550739, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/96550739" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 
@@ -30,7 +57,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="#projects">Проекты</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="#contact">Контакты</a>
             </li>
         </ul>
@@ -58,7 +85,7 @@
 
                 </ul>
                 {#                <p>#}
-{#                {{ about_me|safe }}#}
+                {#                {{ about_me|safe }}#}
                 {#                </p>#}
             </div>
         </div>
@@ -75,7 +102,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Разработка ботов в Телеграм</h5>
-{#                        <p class="card-text">Я разрабатываю ботов для телеграма любой сложности</p>#}
+                        {#                        <p class="card-text">Я разрабатываю ботов для телеграма любой сложности</p>#}
                     </div>
                 </div>
             </div>
@@ -83,7 +110,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Backend разработка</h5>
-{#                        <p class="card-text">Я разрабатываю backend для ваших проектов</p>#}
+                        {#                        <p class="card-text">Я разрабатываю backend для ваших проектов</p>#}
                     </div>
                 </div>
             </div>
@@ -91,7 +118,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Админ-панели</h5>
-{#                        <p class="card-text">Я разрабатываю админ-панели для ваших проектов</p>#}
+                        {#                        <p class="card-text">Я разрабатываю админ-панели для ваших проектов</p>#}
                     </div>
                 </div>
             </div>
@@ -220,7 +247,7 @@
                         {% endif %}
                         <div class="card-body">
                             <h5 class="card-title">{{ project['name'] }}</h5>
-{#                            <p class="card-text">{{ project['brief_description'] }}</p>#}
+                            {#                            <p class="card-text">{{ project['brief_description'] }}</p>#}
                             <button class="btn btn-primary" data-toggle="modal"
                                     data-target="#projectModal{{ project['id'] }}">Подробнее
                             </button>
@@ -244,11 +271,13 @@
                             <div class="modal-body">
                                 <!-- Bootstrap Carousel -->
                                 {#                                <img src="{{ project['image_title'] }}" class="d-block w-100">#}
-                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                                     data-interval="false">
                                     <div class="carousel-inner">
-                                         <div class="carousel-item } active">
-                                                <img src="{{ project['image_title'] }}" class="d-block w-100" alt="Project Image">
-                                            </div>
+                                        <div class="carousel-item } active">
+                                            <img src="{{ project['image_title'] }}" class="d-block w-100"
+                                                 alt="Project Image">
+                                        </div>
                                         {% for image in project['images'] %}
                                             <div class="carousel-item">
                                                 <img src="{{ image }}" class="d-block w-100" alt="Project Image">
@@ -267,7 +296,7 @@
                                     </a>
                                 </div>
                                 {{ project['description']|safe }}
-{#                                <p class="mt-3">{{ project['description'] }}</p>#}
+                                {#                                <p class="mt-3">{{ project['description'] }}</p>#}
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
