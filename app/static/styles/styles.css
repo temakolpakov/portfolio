@@ -215,7 +215,7 @@ body {
     padding: 20px 0;
 }
 
-.modal-body li p {
+.modal-body ul li {
     font-size: 1.4rem;
     color: #6c757d;
     line-height: 1.8;
